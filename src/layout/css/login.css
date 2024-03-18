@@ -1,0 +1,71 @@
+.login{
+    background-color: rgb(174, 63, 82);
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
+.login img{
+    margin: 50px 0 10px 0;
+}
+.login p:nth-child(2){
+    margin: 15px 0;
+    font-size: 20px;
+    color: #000;
+}
+.logo-border{
+    border-bottom: 1px solid #ccc;
+}
+.login-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+.login form input{
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    outline: none;
+}
+.login form input::placeholder{
+    color: #ccc;
+}
+.login form p:nth-child(3){
+   text-align: start;
+   margin-bottom: 15px;
+   color: #C5C4C4;
+   transition: 0.3s;
+
+}
+.login form p:nth-child(3):hover{
+    color: #FF7A00;
+}
+.login form button{
+    height: 50px;
+    margin-bottom: 25px;
+    border: none;
+}
+.login form button:nth-child(4){
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.login form button:nth-child(4):hover{
+    background-color:#FF7A00 ;
+}
+.login form button:nth-child(5){
+    background-color: #F1F1F1;
+    color: #212529;
+}
+.login form button:nth-child(5) span{
+   color: #C5C4C4;
+    transition: 0.3s;
+}
+.login form button:nth-child(5) span:hover{
+    color: #FF7A00;
+ }
+ 

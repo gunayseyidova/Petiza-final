@@ -1,0 +1,104 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: pink;
+    padding: 25px 0;
+}
+
+.icon-burger {
+    display: none;
+}
+
+.icon-burger {
+    font-size: 30px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons span {
+    font-size: 20px;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar-list li {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.burger-list {
+    position: fixed;
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    width: 50%;
+    transition: 0.7s;
+    opacity: 0;
+    z-index: 100;
+}
+
+.login-page {
+    position: fixed;
+    height: 100vh;
+    top: -100%;
+    left: 20%;
+    width: 60%;
+    transition: 0.7s;
+    opacity: 0;
+    z-index: 100;
+}
+.login-page.active{
+    top: 0;
+    opacity: 1;
+}
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    backdrop-filter: blur(8px);
+    z-index: 9;
+}
+
+@media only screen and (max-width: 1200px) {
+    .icons .icon-none {
+        display: none;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .icon-burger {
+        display: inline-block;
+    }
+
+    /* Burger buttonuna clikledikde active classi elave olunur ve menu acilir   */
+
+    .burger-list.active {
+        left: 0;
+        opacity: 1;
+    }
+
+  
+}

@@ -1,0 +1,28 @@
+.burgerMenu{
+    background-color: #fff;
+  height: 100vh;
+}
+
+.burgerMenu .buttons{
+    display: flex;
+}
+.burgerMenu .buttons div{
+    background-color: white;
+    width: 50%;
+    height: 55px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.burgerMenu .buttons div:nth-child(1){
+    border-right: 1px solid #ccc;
+}
+.burgerMenu .buttons div span{
+    padding-right: 10px;
+}
+.burgerMenu .buttons .burger-btn{
+    font-size: 20px;
+}
