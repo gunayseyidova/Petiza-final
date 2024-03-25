@@ -1,0 +1,21 @@
+.dog{
+    background-image: url('../images/dog.webp');
+    text-align: right;
+}
+.dog-text{
+    position: absolute;
+    top: 300px;
+    right: 50px;
+
+}
+.dog-text h2{
+    color: #fff;
+}
+.dog-text h4{
+    color: #fff;
+}
+.dog-text button{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+}

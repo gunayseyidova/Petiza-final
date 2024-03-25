@@ -7,9 +7,10 @@
 }
 
 header {
+    z-index: 90;
     position: fixed;
     width: 100%;
-    background-color: pink;
+    background-color: #fff;
     padding: 25px 0;
 }
 
@@ -100,5 +101,5 @@ header {
         opacity: 1;
     }
 
-  
 }
+

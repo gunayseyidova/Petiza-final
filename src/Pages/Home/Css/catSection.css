@@ -1,0 +1,17 @@
+.cat1{
+    background-image: url('../images/cat1.webp');
+}
+.cat1-text{
+    position: absolute;
+    top: 300px;
+    left: 50px;
+
+}
+.cat1-text h2{
+    color: #333;
+}
+.cat1-text h4{
+    color: #acabab;
+}
+
+

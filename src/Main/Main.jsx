@@ -1,13 +1,17 @@
 import React from 'react'
 import Navbar from '../layout/Navbar'
-import Login from '../layout/Login'
+import CatSection from '../Pages/Home/CatSection'
+import CatSection2 from '../Pages/Home/CatSection2'
+import DogSection from '../Pages/Home/DogSection'
 
 const Main = () => {
   return (
    <>
    <main>
     <Navbar/>
-    {/* <Login/> */}
+    <CatSection/>
+    <CatSection2/>
+    <DogSection/>
    </main>
 
    </>

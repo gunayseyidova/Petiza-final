@@ -1,0 +1,18 @@
+.cat2{
+    background-image: url('../images/cat2.webp');
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cat2-text h2{
+    color: #fff;
+}
+.cat2-text h4{
+    color: #fff;
+}
+.cat2-text button{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
