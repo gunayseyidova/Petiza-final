@@ -1,0 +1,123 @@
+footer{
+    background-color: #F2F2F2;
+    padding: 60px 0;
+}
+.footer-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.footer-list h5{
+    font-size: 21px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.footer-list h5::after{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #000;
+    width: 40%;
+    height: 2px;
+    bottom: 7px;
+    left: 0;
+}
+.footer-list ul li{
+    font-size: 15px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #000;
+    transition: 0.3s;
+}
+.footer-list ul li:hover{
+    color: #FF7A00;
+}
+.footer-list .icons-list{
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.footer-list .icons-list li{
+    font-size: 20px;
+    transition: transform 1s;
+
+}
+.footer-list .icons-list li:hover{
+    color: #FF7A00;
+    transform: rotateY(180deg);
+    
+}
+.subs h5{
+    font-size: 21px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.subs h5::after{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #000;
+    width: 100px;
+    height: 2px;
+    bottom: 7px;
+    left: 0;
+}
+.subs p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+.subs input{
+    width: 70%;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+.subs button{
+    width: 30%;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    transition: .3s;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.subs button:hover{
+    background-color: #FF7A00;
+}
+
+@media only screen and (max-width: 990px) {
+    .footer-list{
+        width: 30%;
+    }
+    .subs{
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .footer-list{
+        width: 100%;
+        padding-top: 30px;
+    }
+    .subs{
+        width: 100%;
+        padding-top: 30px;
+    }
+}

@@ -1,0 +1,108 @@
+[
+    {
+        "id": 1,
+        "title": "Almo Nature Daily Boosted Sale",
+        "discount":8,
+        "priceLast":13.00,
+        "price": 12.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/1.jpg?v=1590736181"
+    },
+    {
+        "id": 2,
+        "title": "Pedigree Dentastix",
+        "discount":5,
+        "priceLast":20.00,
+        "price": 19.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/4.jpg?v=1590736466"
+    },
+    {
+        "id": 3,
+        "title": "Rocco Classic",
+        "discount":4,
+        "priceLast":26.00,
+        "price": 25.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/5.jpg?v=1590736662"
+    },
+    {
+        "id": 4,
+        "title": "Royal Canin Exigent Cats",
+        "discount":4,
+        "priceLast":25.00,
+        "price": 24.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/10.1_d66c7abd-c596-41ba-bc6b-c6cac9cf4f65.jpg?v=1590737384"
+    },
+    {
+        "id": 5,
+        "title": "Norwegian Forest Cat",
+        "price":35.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/2.jpg?v=1590736434"
+    },
+    {
+        "id": 6,
+        "title": "Pet bowl Affiliate",
+        "price":15.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/9.jpg?v=1590737537"
+    },
+    {
+        "id": 7,
+        "title": "Pet food Variable",
+        "price":34.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/13_8055f5c0-b07f-437f-be4e-370cafc69852.jpg?v=1590737261"
+    },
+    {
+        "id": 8,
+        "title": "Royal Canin Exigent Cats",
+        "price":40.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/7.jpg?v=1590736751"
+    },
+    {
+        "id": 9,
+        "title": "Royal Canin Exigent Cats Video",
+        "price":23.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/6.jpg?v=1590736725"
+    },
+    {
+        "id": 10,
+        "title": "Royal Canin Maxi 5+",
+        "price":22.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/9.1.jpg?v=1590734761"
+    },
+    {
+        "id": 11,
+        "title": "Royal Canin Maxi Adult",
+        "price":19.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/6.1.jpg?v=1590736861"
+    },
+    {
+        "id": 12,
+        "title": "Royal Canin Medium Simple",
+        "price":29.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/15.jpg?v=1590736915"
+    },
+    {
+        "id": 13,
+        "title": "Veterinary Diet Canine",
+        "discount":9,
+        "priceLast":24.00,
+        "price": 22.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/14_f6befbcb-6902-4267-b50a-7b8807013561.jpg?v=1590823796"
+    },
+    {
+        "id": 14,
+        "title": "Wellbeloved Dry Dog Food",
+        "price":41.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/10.1_743c819e-7867-4e2e-8bd0-8eaa371d9c88.jpg?v=1590734747"
+    },
+    {
+        "id": 15,
+        "title": "Wet Cat Food",
+        "price":46.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/7.1_68a40c73-2286-4166-b0af-613f54c30d61.jpg?v=1590734743"
+    },
+    {
+        "id": 16,
+        "title": "Wilderness Dry Dog Food",
+        "price":43.00,
+        "image": "https://petiza-store-demo.myshopify.com/cdn/shop/products/3.1_e5c67a0b-880a-4beb-ad2c-76fb77b4f74a.jpg?v=1590736799"
+    }
+]

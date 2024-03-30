@@ -1,68 +1,77 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import logo from './images/logo.png'
 import { IoSearch } from "react-icons/io5";
-import { FaRegUser, FaRegHeart } from "react-icons/fa6";
-import { LiaShoppingBagSolid } from "react-icons/lia";
+import { FaRegUser, FaRegHeart, FaCartShopping } from "react-icons/fa6";
 import { BiMenuAltLeft } from "react-icons/bi";
 import '../layout/css/navbar.css'
 import BurgerMenu from './BurgerMenu';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Login from './Login';
 const Navbar = () => {
 
-  const[menuOpen,setMenuOpen]=useState(false);
-  const[loginOpen,setLoginOpen]=useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false)
 
-  const toggleMenu=()=>{
+  const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
-  const closeMenu=()=>{
+  const closeMenu = () => {
     setMenuOpen(false)
   }
-  const toggleLogin=()=>{
+  const toggleLogin = () => {
     setLoginOpen(!loginOpen)
   }
-  const closeLogin=()=>{
+  const closeLogin = () => {
     setLoginOpen(false)
   }
 
- 
+
   return (
     <>
       <header>
         <div className='container'>
-        {menuOpen &&<div className="blur-background" onClick={closeMenu}></div>}
+          {menuOpen && <div className="blur-background" onClick={closeMenu}></div>}
           <div className='icon-burger' onClick={toggleMenu} >
-          <span><BiMenuAltLeft /></span>
+            <span><BiMenuAltLeft /></span>
           </div>
           {/* Burger Menu acilmasi ucun responsivde */}
-           <div className={`burger-list ${menuOpen? 'active':''}`}>
-            <BurgerMenu/>
-          </div> 
-          
+          <div className={`burger-list ${menuOpen ? 'active' : ''}`}>
+            <BurgerMenu />
+          </div>
+
           <div>
-            <Link to={'/'}>
-            <img width={150} src={logo} alt="" />
-            </Link>
-            
+            <NavLink to={'/'}>
+              <img width={150} src={logo} alt="" />
+            </NavLink>
+
           </div>
           <ul className='navbar-list'>
-            <li>Home</li>
-            <li>Shop</li>
-            <li>Featured</li>
-            <li>Pages</li>
-            <li>Blog</li>
+            <NavLink className='link' to={'/'}>
+              <li>Home</li>
+            </NavLink>
+            <NavLink className='link' to={'/about'}>
+              <li>About</li>
+            </NavLink>
+            <NavLink className='link' to={'/shop'}>
+              <li>Shop</li>
+            </NavLink>
+            <NavLink className='link' to={'/blog'}>
+              <li>Blog</li>
+            </NavLink>
+            <NavLink className='link' to={'/contact'}>
+              <li>Contact</li>
+            </NavLink>
           </ul>
           <div className='icons'>
             <span><IoSearch /></span>
             <span className='icon-none' onClick={toggleLogin} ><FaRegUser /></span>
             <span className='icon-none'><FaRegHeart /></span>
-            <span><LiaShoppingBagSolid /></span>
+            <span><FaCartShopping /></span>
           </div>
 
-          {loginOpen &&<div className="blur-background" onClick={closeLogin}></div>}
-          <div className={`login-page ${loginOpen?'active':''}`}>
-            <Login/>
+          {loginOpen && <div className="blur-background" onClick={closeLogin}></div>}
+          <div className={`login-page ${loginOpen ? 'active' : ''}`}>
+            <Login />
           </div>
         </div>
       </header>

@@ -1,0 +1,98 @@
+.card-image{
+    width: 14vw;
+    height: 13vw;
+    background-size: cover;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    position: relative;
+}
+.discount {
+    padding: 5px 10px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #FF4949;
+}
+.discount p{
+    margin: 0;
+    font-size: 10px;
+    color: #fff;
+}
+.card:hover .card-icons{
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px;
+    margin-bottom: 20px;
+
+}
+.card-icons{
+    gap: 15px;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    
+}
+.card-icons div{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 9px 10px 7px 10px;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.card-icons div:hover{
+    background-color: #FF7A00;
+    color: #fff;
+}
+.card-text{
+    text-align: center;
+}
+.card-text p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.card-text p:hover{
+    color: #FF7A00;
+}
+.card-text span:nth-child(2){
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #979797;
+    position: relative;
+    padding-right: 7px;
+}
+.card-text span:nth-child(3){
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FF7A00;
+}
+.card-text span:nth-child(2)::after{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #979797;
+    width:28px;
+    bottom: 9px;
+    left: 0;
+}
+@media only screen and (max-width: 1500px){
+    .card-image{
+        width: 20vw;
+        height: 20vw;
+    }
+}
+@media only screen and (max-width: 777px){
+    .card-image{
+        width: 40vw;
+        height: 40vw;}
+}
+
+
