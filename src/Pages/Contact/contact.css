@@ -1,0 +1,61 @@
+.bg-contact{
+    background-image: url('./image/breacrumb.webp');
+    width: 100%;
+    height: 20vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-contact h2{
+    font-size: 46px;
+    font-weight: 400;
+    color: #010101;
+}
+.contact-container{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-container form{
+    background-color: purple;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container form input{
+    padding-left: 10px;
+    height: 50px;
+    margin: 0 auto;
+    width: 90%;
+    border: 1px solid  #ebebeb;
+    outline: none;
+    margin-bottom: 20px;
+}
+.contact-container form textarea{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.contact-container form button{
+    margin-top:20px;
+    margin-left: 2vw;
+    text-transform: uppercase;
+    width: 150px;
+    height: 45px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s;
+}
+.contact-container form button:hover{
+    background-color: #FF7A00;
+    color: #fff;
+}
