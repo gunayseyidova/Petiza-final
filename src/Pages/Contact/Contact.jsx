@@ -9,7 +9,16 @@ const Contact = () => {
     </div>
     <div className='contact-container'>
       <div>
-        <p>map</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59598.91565392559!2d105.7292912!3d20.9953536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454bab9b67e93%3A0xbbe16aced529963f!2zTeG7uSDEkMOsbmgsIE5hbSBU4burIExpw6ptLCBIYW5vaSwgVmlldG5hbQ!5e0!3m2!1str!2saz!4v1711896790400!5m2!1str!2saz"
+        width="600"
+        height="450"
+        style={{ border: '0' }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer"
+        title="Harita"
+      ></iframe>
       </div>
      <form action="">
         <input type="text" placeholder='Your Name'/>

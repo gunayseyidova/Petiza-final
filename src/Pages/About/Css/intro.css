@@ -1,0 +1,117 @@
+
+.about-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.intro-detail {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.intro-detail:nth-child(4) {
+    margin-bottom: 80px;
+}
+
+.cat-image1 {
+    background-image: url('../images/people1.webp');
+}
+
+.cat-image1:hover {
+    background-image: url('../images/people1.jpg');
+    background-size: 95%;
+}
+
+.cat-image2 {
+    background-image: url('../images/people4.webp');
+}
+
+.cat-image2:hover {
+    background-image: url('../images/people4.jpg');
+    background-size: 95%;
+}
+
+.dog-image1 {
+    background-image: url('../images/people3.webp');
+}
+
+.dog-image1:hover {
+    background-image: url('../images/people3.jpg');
+    background-size: 95%;
+}
+
+.dog-image2 {
+    background-image: url('../images/people2.webp');
+}
+
+.dog-image2:hover {
+    background-image: url('../images/people2.jpg');
+    background-size: 95%;
+}
+
+.intro-image {
+    width: 50%;
+    height: 30vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.info-intro {
+    width: 45%;
+}
+
+.info-intro p {
+    line-height: 28px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    font-weight: 400;
+}
+
+.info-intro h3 {
+    font-size: 36px;
+    color: #333;
+    text-align: left;
+    font-weight: 600;
+    line-height: 43px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.info-intro h3::before {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #FF7A00;
+    width: 60px;
+    bottom: 9px;
+    left: 0;
+}
+
+.info-intro p:nth-child(3) {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .intro-image {
+        width: 100%;
+        height: 60vw;
+    }
+
+    .info-intro {
+        width: 100%;
+    }
+    .info-intro p:nth-child(1){
+        margin-top: 10px;
+    }
+    .info-intro p:nth-child(3){
+        margin-bottom: 10px;
+    }
+
+}

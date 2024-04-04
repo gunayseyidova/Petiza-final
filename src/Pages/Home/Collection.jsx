@@ -35,7 +35,7 @@ const Collection = () => {
   var settings = {
     dots: true,
     infinite: false,
-    slidesToShow: slidesToShow,
+    slidesToShow:2,
     speed: 500,
     slidesToScroll: 1,
   };

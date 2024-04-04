@@ -62,14 +62,9 @@
 .slick-prev{
     display: none !important;
 }
-.slick-next{
+ .slick-next{
     display: none !important;
 }
-
-
-
-
-
 
 .dog-food{
     display: flex;

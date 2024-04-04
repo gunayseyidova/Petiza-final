@@ -1,0 +1,67 @@
+.bg-about {
+    background-image: url('../../Contact/image/breacrumb.webp');
+    width: 100%;
+    height: 23vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-about h2 {
+    font-size: 46px;
+    font-weight: 400;
+    color: #010101;
+}
+
+
+
+
+
+/* SECTION3 */
+/* .instabg{
+    width: 200px;
+    height: 200px;
+}
+.insta1{
+    background-image: url('./images/instagram1.webp');
+}
+.insta2{
+    background-image: url('./images/instagram2.webp');
+}
+.insta3{
+    background-image: url('./images/instagram3.webp');
+}
+.insta4{
+    background-image: url('./images/instagram4.webp');
+}
+.insta5{
+    background-image: url('./images/instagram5.webp');
+}
+.insta6{
+    background-image: url('./images/instagram6.webp');
+}
+.insta7{
+    background-image: url('./images/instagram7.webp');
+} */
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .bg-about {
+        height: 40vw;
+        background-position: center;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) {
+    .bg-about {
+        height: 60vw;
+        background-position: center;
+    }
+   
+}

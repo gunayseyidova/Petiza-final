@@ -9,16 +9,19 @@
     position: relative;
 }
 .discount {
-    padding: 5px 10px;
     position: absolute;
     left: 10px;
     top: 10px;
     background-color: #FF4949;
 }
 .discount p{
+    padding: 5px 10px;
     margin: 0;
     font-size: 10px;
     color: #fff;
+}
+.card{
+    margin-top: 30px;
 }
 .card:hover .card-icons{
     opacity: 1;
@@ -61,7 +64,7 @@
 .card-text p:hover{
     color: #FF7A00;
 }
-.card-text span:nth-child(2){
+.card-text .price-last{
     display: inline-block;
     font-size: 15px;
     font-weight: 700;
@@ -69,13 +72,13 @@
     position: relative;
     padding-right: 7px;
 }
-.card-text span:nth-child(3){
+.card-text .price{
     display: inline-block;
     font-size: 15px;
     font-weight: 700;
     color: #FF7A00;
 }
-.card-text span:nth-child(2)::after{
+.card-text .price-last::after{
     content: '';
     position: absolute;
     border-bottom: 1px solid #979797;
@@ -87,6 +90,12 @@
     .card-image{
         width: 20vw;
         height: 20vw;
+    }
+}
+@media only screen and (max-width: 970px){
+    .card-image{
+        width: 28vw;
+        height: 30vw;
     }
 }
 @media only screen and (max-width: 777px){

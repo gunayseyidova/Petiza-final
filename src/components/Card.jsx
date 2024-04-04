@@ -10,7 +10,7 @@ const Card = ({id,title,discount,priceLast,price,image}) => {
         <div className="card" key={id}>
         <div className='card-image' style={{backgroundImage:`url(${image})`}}>
           <div className='discount'>
-            <p>-{discount}%</p>
+            {discount && ( <p>-{discount}%</p>)}
           </div>
           <div className='card-icons'>
             <div><FaCartShopping /></div>
@@ -20,8 +20,8 @@ const Card = ({id,title,discount,priceLast,price,image}) => {
         </div>
         <div className='card-text'>
           <p>{title}</p>
-          <span>${priceLast}</span>
-          <span>${price}</span>
+          {priceLast && (<span className='price-last'>${priceLast}</span>)}
+          <span className='price'>${price}</span>
         </div>
       </div>
 

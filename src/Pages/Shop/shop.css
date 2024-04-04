@@ -1,0 +1,48 @@
+.bg-shop{
+    background-image: url('./dark.webp');
+}
+.bg-shop {
+    background-image: url('./dark.webp');
+    width: 100%;
+    height: 30vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.bg-shop h2 {
+    font-size: 46px;
+    font-weight: 400;
+    color: #fff;
+}
+.products{
+
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .bg-shop {
+        height: 40vw;
+        background-position: center;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) {
+    .bg-shop {
+        height: 60vw;
+        background-position: center;
+    }
+   
+}
