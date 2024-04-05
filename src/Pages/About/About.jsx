@@ -2,6 +2,7 @@ import React from 'react'
 import './Css/about.css'
 import Intro from './Intro'
 import ServiceBox from './ServiceBox'
+import SlideBox from './SlideBox'
 
 
 const About = () => {
@@ -16,6 +17,8 @@ const About = () => {
         </div>
         <Intro/>
         <ServiceBox/>
+        <SlideBox/>
+
 
     </>
 

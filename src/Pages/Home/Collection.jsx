@@ -56,11 +56,7 @@ const Collection = () => {
                 return product.id < 5 ? (<>
 
                   <Card key={product.id}
-                    image={product.image}
-                    priceLast={product.priceLast}
-                    discount={product.discount}
-                    price={product.price}
-                    title={product.title} /></>) : null
+                    {...product} /></>) : null
               })}
 
             </Slider>
@@ -86,11 +82,7 @@ const Collection = () => {
                 return product.id>4 && product.id<9  ? (<>
 
                   <Card key={product.id}
-                    image={product.image}
-                    price={product.price}
-                    discount={product.discount}
-                    discountPrice={product.disCountPrice}
-                    title={product.title} /></>):null
+                    {...product}/></>):null
               })}
 
             </Slider>

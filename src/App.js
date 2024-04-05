@@ -28,6 +28,10 @@ const router =createBrowserRouter([
         element:<Shop/>
       },
       {
+        path:'/shop/:id',
+        element:<Details/>
+      },
+      {
         path:'/blog',
         element:<Details/>
       }

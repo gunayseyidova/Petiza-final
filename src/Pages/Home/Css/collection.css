@@ -59,10 +59,10 @@
     color: #fff;
 }
 
-.slick-prev{
+.card-container .slick-prev{
     display: none !important;
 }
- .slick-next{
+.card-container .slick-next{
     display: none !important;
 }
 

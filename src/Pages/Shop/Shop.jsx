@@ -14,11 +14,7 @@ const Shop = () => {
             return(
                 <>
                 <Card className='product-card' key={product.id}
-                    image={product.image}
-                    priceLast={product.priceLast}
-                    discount={product.discount}
-                    price={product.price}
-                    title={product.title} />
+                   {...product} />
                 </>
             )
         })
