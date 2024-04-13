@@ -3,6 +3,7 @@ import './Css/collection.css'
 import Card from '../../components/Card';
 import products from '../../product/product.json'
 import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -35,7 +36,7 @@ const Collection = () => {
   var settings = {
     dots: true,
     infinite: false,
-    slidesToShow:2,
+    slidesToShow: slidesToShow,
     speed: 500,
     slidesToScroll: 1,
   };
@@ -61,7 +62,9 @@ const Collection = () => {
 
             </Slider>
           </div>
-          <button className='shop-btn'>Shop now</button>
+          <NavLink to={'/shop'}>
+            <button className='shop-btn'>Shop now</button>
+          </NavLink>
 
         </div>
 
@@ -79,15 +82,17 @@ const Collection = () => {
 
 
               {products.map((product) => {
-                return product.id>4 && product.id<9  ? (<>
+                return product.id > 4 && product.id < 9 ? (<>
 
                   <Card key={product.id}
-                    {...product}/></>):null
+                    {...product} /></>) : null
               })}
 
             </Slider>
           </div>
-          <button className='shop-btn'>Shop now</button>
+          <NavLink to={'/shop'}>
+            <button className='shop-btn'>Shop now</button>
+          </NavLink>
 
         </div>
         <div className='bg-dog'></div>

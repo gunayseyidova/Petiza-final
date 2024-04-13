@@ -1,10 +1,16 @@
 .burgerMenu{
     background-color: #fff;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .burgerMenu .buttons{
     display: flex;
+}
+.burgerMenu .buttons span{
+    cursor: pointer;
 }
 .burgerMenu .buttons div{
     background-color: white;

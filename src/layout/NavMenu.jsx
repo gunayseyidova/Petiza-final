@@ -1,17 +1,28 @@
 import React from 'react'
 import '../layout/css/navMenu.css'
-const NavMenu = () => {
-  return (
-    <>
-         <ul className='navMenu-list'>
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Featured</li>
-                    <li>Pages</li>
-                    <li>Blog</li>
-          </ul>
-    </>
-  )
-}
+import { NavLink } from 'react-router-dom';
 
-export default NavMenu
+
+const NavMenu = ({ closeMenu }) => {
+  return (
+        <ul className='navMenu-list'>
+        <NavLink to={'/'} onClick={closeMenu}>
+          <li>Home</li>
+        </NavLink>
+        <NavLink to={'/about'} onClick={closeMenu}>
+          <li>About</li>
+        </NavLink>
+        <NavLink to={'/shop'} onClick={closeMenu}>
+          <li>Shop</li>
+        </NavLink>
+        <NavLink to={'/blog'} onClick={closeMenu}>
+          <li>Blog</li>
+        </NavLink>
+        <NavLink to={'/contact'} onClick={closeMenu}>
+          <li>Contact</li>
+        </NavLink>
+      </ul>
+  );
+};
+
+export default NavMenu;

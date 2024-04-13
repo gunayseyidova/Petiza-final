@@ -1,36 +1,21 @@
 import React from 'react'
-import slideImage from '../../product/slide.json'
 import './Css/slideBox.css'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { FaInstagram } from "react-icons/fa6";
+import {Link} from 'react-router-dom';
 
-const SlideBox = () => {
-  var settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 6,
-    speed: 500,
-    slidesToScroll: 1,
-  };
+
+const SlideBox = ({image}) => {
+ 
   return (
     <>
-      <Slider {...settings}>
-        {
-          slideImage.map((item) => {
-            return(
-              <div className='slide-img-parent'>
-              <div className='slide-img' style={{ backgroundImage: `url(${item.image})` }}>
-
-              </div>
-            </div>
-            )
-           
-          })
-        }
-
-      </Slider>
-
+      <div className='box-img' style={{backgroundImage:`url(${image})`}}>
+       
+      <div className='box-hover'>
+        <Link className='link' to={"https://www.instagram.com/"} target='_blank'>
+        <FaInstagram />
+        </Link>
+        </div>
+      </div>
     </>
   )
 }

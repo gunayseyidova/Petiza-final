@@ -10,3 +10,9 @@ ul li{
 body{
     font-family: "Sofia Sans", sans-serif;
 }
+ a:link{
+    text-decoration: none;
+ }
+ button {
+    cursor: pointer;
+ }

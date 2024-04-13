@@ -6,6 +6,7 @@ import About from './Pages/About/About'
 import Contact from './Pages/Contact/Contact'
 import Shop from './Pages/Shop/Shop'
 import Details from './components/Details'
+import Basket from './components/Basket'
 
 const router =createBrowserRouter([
   {
@@ -28,11 +29,11 @@ const router =createBrowserRouter([
         element:<Shop/>
       },
       {
-        path:'/shop/:id',
-        element:<Details/>
+        path:'/basket',
+        element:<Basket/>
       },
       {
-        path:'/blog',
+        path:'/shop/:id',
         element:<Details/>
       }
 

@@ -7,6 +7,8 @@ import NavLogin from './NavLogin';
 const BurgerMenu = () => {
     const [showMenu, setShowMenu] = useState(true);//Baslangicda Menu gosterilsin
 
+
+
     const handleMenuClick = () => {
         setShowMenu(true)
     }
@@ -15,30 +17,40 @@ const BurgerMenu = () => {
     }
     return (
         <>
+          
+                 <div className='burgerMenu'>
 
-            <div className='burgerMenu'>
+                 <div>
+                     <div className='buttons'>
+                         <div onClick={handleMenuClick} style={{
+                             background: showMenu ? 'black' : 'white',
+                             color: showMenu ? 'white' : 'black',
+                             border: showMenu ? 'none' : ''
+                         }}>
+                             <span className='burger-btn'><RiMenu2Fill /></span>
+                             <span>Menu</span>
+                         </div>
+                         <div onClick={handleLoginClick} style={{
+                             background: showMenu ? 'white' : 'black',
+                             color: showMenu ? 'black' : 'white',
+                             border: showMenu ? '' : 'none'
+                         }}>
+                             <span><FaRegUser /></span>
+                             <span>Login</span>
+                         </div>
+                     </div>
+                     {showMenu ? <NavMenu /> : <NavLogin />}
+                     <button className="close-btn" >Close</button>
 
-                <div className='buttons'>
-                    <div onClick={handleMenuClick} style={{
-                        background: showMenu ? 'black' : 'white',
-                        color: showMenu ? 'white' : 'black',
-                        border: showMenu? 'none':''
-                    }}>
-                        <span className='burger-btn'><RiMenu2Fill /></span>
-                        <span>Menu</span>
-                    </div>
-                    <div onClick={handleLoginClick} style={{
-                        background: showMenu ? 'white' : 'black',
-                        color: showMenu ? 'black' : 'white',
-                        border: showMenu? '':'none'
-                    }}>
-                        <span><FaRegUser /></span>
-                        <span>Login</span>
-                    </div>
-                </div>
-                {showMenu ? <NavMenu /> : <NavLogin />}
+                 </div>
+                       
+ 
+ 
+             </div>
+              
+            
 
-            </div>
+            
         </>
     )
 }

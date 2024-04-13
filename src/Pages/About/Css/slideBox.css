@@ -1,7 +1,36 @@
-.slide-img{
-    width: 200px;
-    height: 200px;
-    background-size: 100%;
+.box-img {
+    width: 100%;
+    min-height: 221px;
+    height: 360px;
+    background-size: 120%;
     background-repeat: no-repeat;
-    background-position:center ;
+    background-position: center;
+    position: relative;
+    transition: 1s;
 }
+.box-img:hover{
+    background-size: 140%;
+}
+.box-img:hover .box-hover{
+    opacity: 1;
+}
+.box-hover{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 100%;
+    min-height: 221px;
+    height: 360px;
+    background-color: rgba(0, 0, 0, 0.532);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+
+}
+.box-hover .link{
+    color: #fff;
+}
+

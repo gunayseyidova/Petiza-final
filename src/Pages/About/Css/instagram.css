@@ -1,0 +1,50 @@
+.slick-prev {
+    left: 0;
+    z-index: 9999;
+    transform: translate(50%, -50%);
+}
+
+.slick-next {
+    right: 0;
+    transform: translate(-60%, -50%);
+
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 23px;
+}
+
+.slide-img:hover .slide-hover {
+    display: inline-block;
+}
+.insta-header{
+    margin: 80px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.insta-header::before {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #FF7A00;
+    width: 60px;
+    bottom: 9px;
+    left: 47%;
+}
+.insta-header h4{
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.insta-header p{
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
