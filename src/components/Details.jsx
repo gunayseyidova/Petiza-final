@@ -1,6 +1,5 @@
 import React from 'react'
 import './css/details.css'
-import { FaRegHeart } from "react-icons/fa6";
 import { IoMdStar } from "react-icons/io";
 import products from '../product/product.json';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -33,7 +32,6 @@ const Details = () => {
           <div className='detail-text'>
             <div className='detail-title'>
               <h3>{product.title}</h3>
-              <div className='like'> <FaRegHeart/></div>
               </div>
             {product.priceLast && <span className='price-last'>${product.priceLast} USD</span>}
             <span className='price'>${product.price} USD</span>
