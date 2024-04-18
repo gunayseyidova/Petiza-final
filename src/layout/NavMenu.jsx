@@ -15,7 +15,7 @@ const NavMenu = ({ closeMenu }) => {
         <NavLink to={'/shop'} onClick={closeMenu}>
           <li>Shop</li>
         </NavLink>
-        <NavLink to={'/blog'} onClick={closeMenu}>
+        <NavLink to={'/'} onClick={closeMenu}>
           <li>Blog</li>
         </NavLink>
         <NavLink to={'/contact'} onClick={closeMenu}>

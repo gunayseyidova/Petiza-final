@@ -70,10 +70,9 @@ const Basket = () => {
                       </div>
 
                       <div className='total'>
-                        <span>Total:</span>
-                        <span> ${cartItem.price * cartItem.cartQuantity}</span>
-                      </div>
+                        <span>Total:<span> ${cartItem.price * cartItem.cartQuantity}</span></span>
                       <button className='remove' onClick={() => handleRemoveFromCart(cartItem)}><FaTrashCan /></button>
+                      </div>
 
                     </div>
 
@@ -85,7 +84,7 @@ const Basket = () => {
 
               <div className='summary'>
                 <button onClick={() => handleClearCart()}>Clear</button>
-                <div className='total'>
+                <div className='subtotal'>
                   <span>Subtotal:</span>
                   <span>${cart.cartTotalAmount}</span>
                 </div>

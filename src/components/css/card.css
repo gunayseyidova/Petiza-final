@@ -132,4 +132,7 @@
         padding: 2px 5px;
         
     }
+    .card-text p{
+        font-size: 11px;
+    }
 }

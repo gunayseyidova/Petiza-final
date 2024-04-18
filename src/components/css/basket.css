@@ -65,11 +65,27 @@
     color: #FF7A00;
 }
 
+.total{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .total span:nth-child(1){
     font-size: 20px;
     padding-right: 2px;
 }
-.total span:nth-child(2){
+.total span span{
+    font-size: 20px;
+    color: #FF7A00;
+}
+.subtotal span:nth-child(1){
+    font-size: 20px;
+    padding-right: 2px;
+}
+.subtotal span:nth-child(2){
     font-size: 20px;
     color: #FF7A00;
 }
@@ -120,6 +136,21 @@
 .cart-empty span{
     font-size: 20px;
     color: #FF7A00;
+}
+
+@media only screen and (max-width: 768px){
+    .summary button{
+        width: 30%;
+    }
+    .cart-box .text h4{
+        font-size: 20px;
+       
+    }
+    .remove{
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
 }
 
 

@@ -6,7 +6,6 @@ import { IoSearch } from "react-icons/io5";
 import { FaRegUser, FaRegHeart, FaCartShopping } from "react-icons/fa6";
 import { BiMenuAltLeft } from "react-icons/bi";
 import '../layout/css/navbar.css'
-import BurgerMenu from './BurgerMenu';
 import { NavLink } from 'react-router-dom';
 import Login from './Login';
 
@@ -97,7 +96,7 @@ const Navbar = () => {
             <NavLink className='link' to={'/shop'}>
               <li>Shop</li>
             </NavLink>
-            <NavLink className='link' to={'/blog'}>
+            <NavLink className='link' to={'/'}>
               <li>Blog</li>
             </NavLink>
             <NavLink className='link' to={'/contact'}>
