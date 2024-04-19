@@ -105,12 +105,12 @@ const Navbar = () => {
             </NavLink>
           </ul>
           <div className='icons'>
-            <span><IoSearch /></span>
+            <span className='icon-none'><IoSearch /></span>
             <span className='icon-none' onClick={toggleLogin}><FaRegUser /></span>
-                <div className='basket'>
-                <span className='icon-none'><FaRegHeart /></span>
-            <span className='basket-count'>{cartTotalLike}</span>
-                </div>
+            <div className='basket'>
+              <span><FaRegHeart /></span>
+              <span className='basket-count'>{cartTotalLike}</span>
+            </div>
             <NavLink to={'/basket'}>
               <div className='basket'>
                 <span><FaCartShopping /></span>
